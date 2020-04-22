@@ -1,0 +1,190 @@
+.header {
+  margin-bottom: 20px;
+}
+
+.flex-wrap {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+// стилизация инпута
+.input__wrapper {
+  width: 250px;
+}  
+  
+.input__file {
+  opacity: 0;
+  visibility: hidden;
+  position: absolute;
+}
+
+.input__file-icon-wrapper {
+  height: 45px;
+  width: 45px;
+  margin-right: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-right: 1px solid #fff;
+}
+
+.input__file-button-text {
+  line-height: 1;
+  margin-top: 1px;
+}
+
+.input__file-button {
+  background: $header-btn-bg-color;
+  color: $header-btn-txt-color;
+  font-weight: $header-btn-font-weight;
+  font-size: $font-size;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  border-radius: 3px;
+  cursor: pointer;
+  margin: 0 auto;
+}
+
+.input__file-button:hover {
+  opacity: $header-btn-opacity-hover
+}
+
+/////////////////////////////////////////////
+.dropbtn {
+  background-color: $header-btn-bg-color;
+  color: $header-btn-txt-color;
+  font-weight: $header-btn-font-weight;
+  font-size: $font-size;
+  height: 45px;
+  width: 200px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #f9f9f9;
+  min-width: 180px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 3px;
+}
+
+.dropdown-content a {
+  color: $header-btn-bg-color;;
+  font-weight: 600;
+  padding: 12px 16px;
+  display: block;
+  border: 1px solid transparent;
+}
+
+.dropdown-content a:hover {
+  background-color: #f1f1f1;
+  border: 1px solid green;
+  border-radius: 3px;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  opacity: $header-btn-opacity-hover;
+}
+
+.rect-coords {
+  width: 200px;
+  border: 1px solid red;
+}
+
+.rect-coords input{
+  width: 50%;
+}
+
+// окно с координатами для фигур
+.coords {
+  display: block;
+  position: absolute;
+  top: 0;
+  height: 200px;
+  width: 210px;
+  background-color: #f9f9f9;
+  text-align: center;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  border-radius: 3px;
+}
+
+.coords-rect,
+.coords-line,
+.coords-circle {
+  display: none;
+}
+
+.coords_title {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 7px;
+}
+
+.coord-row {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  margin-bottom: 10px;
+}
+
+.coord-row input {
+  width: 45%;
+  box-sizing: border-box;
+  padding: 2px 10px;
+}
+
+input[type="text"]::placeholder {
+  text-align: center;
+}
+
+.draw-btn {
+  margin: 10px 0;
+  height: 30px;
+}
+
+
+
+// .rect-coords {
+//   display: block;
+//   position: absolute;
+//   left: 50%;
+//   transform: translateX(-50%);
+//   background-color: #f9f9f9;
+//   max-width: 180px;
+//   text-align: center;
+//   box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+//   z-index: 1;
+//   border-radius: 3px;
+// }
+
+// .coords-row {
+//   margin: 10px 0;
+//   display: flex;
+//   flex-direction: row;
+//   justify-content: space-evenly;
+//   align-items: center;
+// }
+
+// .coords-row input {
+//   padding: 2px 5px;
+
+//   // box-sizing: border-box;
+// }

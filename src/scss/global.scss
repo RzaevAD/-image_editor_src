@@ -1,0 +1,37 @@
+body {
+  margin: 0;
+  padding: 1em;
+  font-size: $font-size;
+  font-family: "Open Sans", sans-serif;
+
+  @media (min-width: $screen-sm) {
+    // background-color: #ff0;
+  }
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1100px;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+li {
+
+  list-style-type: none;
+}
+
+// .form {
+//   @include form();
+// }
+
+// .block {
+//   display: none;
+
+//   @media (min-width: $screen-sm) {
+//     display: flex;
+//   }
+// }

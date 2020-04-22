@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="css/style.min.css">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <div class="flex-wrap">
+                <div class="input__wrapper">
+                    <input name="file" type="file" name="file" id="input__file" class="input input__file" multiple>
+                    <label for="input__file" class="input__file-button">
+                    <span class="input__file-icon-wrapper"><img class="input__file-icon" src="img/upload.svg" alt="Выбрать файл" width="25"></span>
+                    <span class="input__file-button-text">Загрузить изображение</span>
+                    </label>
+                </div>
+                <div class="dropdown">
+                    <button class="dropbtn">Нарисовать</button>
+                    <div class="dropdown-content">
+                        <a href="#" class="draw-rect">Прямоугольник</a>
+                        <a href="#" class="draw-line">Линия</a>
+                        <a href="#" class="draw-circle">Окружность</a>
+                    </div>
+                    <div class="coords coords-rect">
+                        <span class="coords_title">Прямоугольник</span>
+
+                        <div class="coord-row">
+                            <input id="rect-x" placeholder="x" type="text">
+                            <input id="rect-y" placeholder="y" type="text">
+                        </div>
+
+                        <div class="coord-row">
+                            <input id="rect-h" placeholder="height" type="text">
+                            <input id="rect-w" placeholder="width" type="text">
+                        </div>
+
+                        <div class="coord-row">
+                            <input id="rect-angle" placeholder="angle=0" type="text">
+                        </div>
+
+                        <div class="coord-row">
+                            <input id="rect-color" type="color">
+                            <input id="rect-linew" placeholder="line width=1" type="text">
+                        </div>
+
+                        <button class="draw-rect-btn">Нарисовать</button>
+                    </div>
+
+                    <div class="coords coords-line">
+                        <span class="coords_title">Линия</span>
+
+                        <div class="coord-row">
+                            <input id="line-x1" placeholder="x1" type="text">
+                            <input id="line-y1" placeholder="y1" type="text">
+                        </div>
+
+                        <div class="coord-row">
+                            <input id="line-x2" placeholder="x2" type="text">
+                            <input id="line-y2" placeholder="y2" type="text">
+                        </div>
+
+                        <div class="coord-row">
+                            <input id="line-color" type="color">
+                            <input id="line-linew" placeholder="line width=1" type="text">
+                        </div>
+
+                        <button class="draw-line-btn">Нарисовать</button>
+                    </div>
+
+                    <div class="coords coords-circle">
+                        <span class="coords_title">Окружность</span>
+
+                        <div class="coord-row">
+                            <input id="circle-x" placeholder="x" type="text">
+                            <input id="circle-y" placeholder="y" type="text">
+                        </div>
+
+                        <div class="coord-row">
+                            <input id="circle-r" placeholder="r" type="text">
+                        </div>
+
+                        <div class="coord-row">
+                            <input id="circle-color" type="color">
+                            <input id="circle-linew" placeholder="line width=1" type="text">
+                        </div>
+
+                        <button class="draw-circle-btn">Нарисовать</button>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="main">
+        <div class="container">
+            <canvas id="canvas" class="canvas"></canvas>
+        </div>
+    </div>
+
+    <script src="js/script.min.js"></script>
+</body>
+</html>
